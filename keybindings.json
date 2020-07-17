@@ -1,0 +1,120 @@
+// 将键绑定放在此文件中以覆盖默认值auto[]
+[
+    {
+        "key": "ctrl+alt+f",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "-editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+;",
+        "command": "editor.action.triggerParameterHints",
+        "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+space",
+        "command": "-editor.action.triggerParameterHints",
+        "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+    {
+        "key": "alt+;",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "f2",
+        "command": "editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "f2",
+        "command": "-editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+meta+=",
+        "command": "wwm.aligncode"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "workbench.action.gotoMethod"
+    },
+    {
+        "key": "alt+r",
+        "command": "workbench.action.gotoSymbol"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.gotoSymbol"
+    },
+    {
+        "key": "alt+o",
+        "command": "workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.reloadWindow",
+        "when": "isDevelopment"
+    },
+    {
+        "key": "shift+alt+r",
+        "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "ctrl+shift+r",
+        "command": "-workbench.action.showAllSymbols"
+    },
+    {
+        "key": "alt+q",
+        "command": "translates.translates",
+        "when": "editorHasSelection"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "-translates.translates",
+        "when": "editorHasSelection"
+    },
+    {
+        "key": "shift+alt+q",
+        "command": "translates.candidate",
+        "when": "editorHasSelection"
+    },
+    {
+        "key": "shift+alt+t",
+        "command": "-translates.candidate",
+        "when": "editorHasSelection"
+    },
+    {
+        "key": "shift+alt+w",
+        "command": "translates.replace",
+        "when": "editorHasSelection"
+    },
+    {
+        "key": "ctrl+alt+t",
+        "command": "-translates.replace",
+        "when": "editorHasSelection"
+    },
+    {
+        "key": "shift+alt+c",
+        "command": "translates.clipboard",
+        "when": "editorHasSelection"
+    },
+    {
+        "key": "alt+t",
+        "command": "-translates.clipboard",
+        "when": "editorHasSelection"
+    }
+]
